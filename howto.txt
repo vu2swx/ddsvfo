@@ -1,0 +1,20 @@
+A simple DDS VFO
+
+  The DDS VFO  is based on arduino and cheap chinese DDS modules.
+   
+     Parts needed.
+             Arduino UNO   
+             AD9850 DDS module
+             Rotary Encoder
+             Pushbutton Switch.
+
+
+  The code is self explanatory and it uses the following libraries.
+  Quadencoder library
+ https://github.com/medecau/QuadEncoder
+  Bounce    http://www.arduino.cc/playground/Code/Bounce
+  
+I wrote this for my own use and if there is sufficient interest I can write better documentation and  improve the code. 
+  73s
+  De VU2SWX
+
