@@ -18,8 +18,8 @@ QuadEncoder qe(6,7);  // Rotary encoder connecter to pins 6 nd 7
 
 int prev=HIGH;
 Bounce bouncer = Bounce( BM,5 ); 
-double freq=1901700; //7.1mhz
-double if_freq= 9001700;
+double freq=1901700; //7.1mhz = IF - freq . This is initial start up frequency .Change here as per  your need.
+double if_freq= 9001700; //change to your IF .See the display freq comment  below.
 double dp;
 int mode=1000;
 Bounce bm = Bounce( BM,10 );
@@ -84,7 +84,7 @@ void loop() {
   // print the  frequency
 delay(1);  // avoid lcd flicker (on blue lcd ?) you can try setting this to 0 for better keypad responese
 lcd.print("  ");
-lcd.print(if_freq-freq);
+lcd.print(if_freq-freq);  // Change here for IF + freq 
 lcd.print("Hz");
 sendFrequency(freq);
 dp=if_freq-freq;
